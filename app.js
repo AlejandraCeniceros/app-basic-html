@@ -21,8 +21,8 @@ buttons.forEach(
 const keyNoteDown = event =>{
     const key = event.key;
     console.log(event);
-    const button = document.querySelector(`button[data-key="${key}"]`)
-    if (butoon) button.click();// va a llamar a la funcion click de la linea 18 
+    const button=document.querySelector(`button[data-key="${key}"]`)
+    if (button) button.click();// va a llamar a la funcion click de la linea 18 
 }
 document.addEventListener('keydown', keyNoteDown ); // keydown es un evento
 
